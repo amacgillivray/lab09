@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 09 - Store Page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form id="form" method="post" action="custbackend.php">
+        <p>
+            <input type="number" id="p0" name="prod0" value ="0" min="0"/><label for="p0" >McDonalds fries - $2.5</label><br/>
+            <input type="number" id="p1" name="prod1" value ="0" min="0"/><label for="p1" >Wendy's Fries - $3</label><br/>
+            <input type="number" id="p2" name="prod2" value ="0" min="0"/><label for="p2" >BK Fries - $0.50</label><br/>
+        </p>
+        <p>
+            <input type="radio" id="shp-7d" name="shp" value ="7d" checked/><label for="shp-7d" >Free 7-Day</label><br/>
+            <input type="radio" id="shp-1d" name="shp" value ="1d" /><label for="shp-1d" >$50 Overnight</label><br/>
+            <input type="radio" id="shp-3d" name="shp" value ="3d" /><label for="shp-3d" >$5 3-Day</label><br/>
+        </p>
+        <p>
+            <input type="text" id="e" name="e" value ="" minlength="1" /><label for="e" >Email</label><br/>
+            <input type="password" id="pw" name="pw" value ="" minlength="1" required /><label for="pw" >Password</label><br/>
+        </p>
+        <p><a id="submit" href="javascript:void(0);">Submit</a></p>
+        <p><a id="reset" href="javascript:void(0);">Reset</a></p>
+        </form>
+        <footer>
+            <script type="text/javascript" src="./formChecker.js"></script>
+        </footer>
+    </body>
+</html>

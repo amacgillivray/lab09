@@ -16,8 +16,8 @@
 			"Which is the coolest 20th-century western historical figure?"];
 		$q0 = [ "The restoration of the House of Stuart to the British Throne.",
 			"The installation of William III and Mary II.",
-			"William Wallace.",
-			"THEY MAY TAKE OUR LIVES, BUT THEY WILL NEVER TAKE OUR FREEDOM.",
+			"To die at Culloden.",
+			"To resurrect William Wallace.",
 			"a0"];
 		$q1 = [ "The upholding of slavery.",
 			"The abolition of slavery.",
@@ -41,24 +41,24 @@
 			"Martin Luther King, Jr.",
 			"Dwight Eisenhower",
 			"Teddy Roosevelt",
-			"all of the above",
+			"All of the above",
 			"a7" ];
         
 		for ($i = 0; $i < sizeof($qs); $i++)
 		{
 			print "<p>" . $qs[$i] . "</p>";
 			$opts = ${"q".$i};
-            // print_r($opts);
 			for ($e = 0; $e < (sizeof($opts)-1); $e++)
 			{
-				print '<input type="radio" id="q'. $i . 'a' $e . '" ' .
-                      'name="q' . $i .'a' . $e . '" value ="q' . $i . 'a' . $e . '" />';
-				// print '<label for="q'. $i . 'a' $e . '" >' . $opts[$e] . '</label><br/>';
+				print '<input type="radio" id="q'.$i.'a'.$e .'" ' .
+                                        'name="q'.$i.'" value ="q' . $i . 'a' . $e . '" />';
+				print '<label for="q'. $i . 'a' . $e . '" >' . $opts[$e] . '</label><br/>';
 			}
-            // print '<input type="hidden" name="q' +$i + 'ans" value="'$opts[sizeof(opts)-1]'" />';
+            print '<input type="hidden" name="q' . $i . 'ans" value="' . $opts[sizeof($opts)-1] . '" />';
         }
 
 	?>
+    <input type="submit"/>
 	</form>
     </body>
 </html>
